@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancakes on the Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">🥞 Pancakes on the Go</div>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('menu')">Our Pancakes</button>
+            <button onclick="showSection('locations')">Locations</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Delicious Pancakes Anytime, Anywhere</h1>
+                <p>Convenient, fresh, and made just for you at our pancake vending machines.</p>
+                <button class="cta-button" onclick="showSection('menu')">View Our Menu</button>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section">
+            <h2>Our Pancake Creations</h2>
+            <div class="pancake-list">
+                <div class="pancake-card">
+                    <img src="./images/pancake.jpg" alt="Delicious Pancakes">
+                    <h3>Classic Pancakes</h3>
+                    <p>Soft and fluffy pancakes, served warm with syrup and butter.</p>
+                </div>
+                <div class="pancake-card">
+                    <img src="./images/pancake2.webp" alt="Chocolate Chip Pancakes">
+                    <h3>Chocolate Chip Pancakes</h3>
+                    <p>Pancakes filled with gooey chocolate chips, topped with cream.</p>
+                </div>
+                <div class="pancake-card">
+                    <img src="./images/Pancake3.jpg" alt="Berry Bliss Pancakes">
+                    <h3>Berry Bliss Pancakes</h3>
+                    <p>Topped with fresh berries and berry compote.</p>
+                </div>
+                <div class="pancake-card">
+                    <img src="./images/pancake4.jpg" alt="Savory Pancakes">
+                    <h3>Savory Pancakes</h3>
+                    <p>For a savory twist with cheese and herbs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="section">
+            <h2>Find Us Here</h2>
+            <ul class="locations-list">
+                <li>🚉 Central Train Station - Platform 3</li>
+                <li>🏫 Eastside High School - Cafeteria Entrance</li>
+                <li>🌳 City Park - Main Plaza</li>
+            </ul>
+            <div class="map-container">
+                <img src="./images/map.gif" alt="Map showing our locations">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pancakes on the Go | Made with ❤️ for pancake lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
